@@ -1,0 +1,304 @@
+.colors-roznica {
+  display: none;
+  position: fixed;
+  left:0;
+  top:0;
+  width:53%;
+  height: 55%;
+  background-color: #fff;
+  border-radius: 1vw;
+  z-index: 999;
+  transition: 0.2s;
+  //overflow:hidden;
+
+  @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+    top:auto;
+    border-radius: 30px 30px 0 0;
+  }
+
+  @media all and (max-width: $screen-smart-l) and (orientation:portrait) {
+    top:auto;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__title-box {
+    @include flex-v-align;
+    border-bottom: 1px solid #e4e4e4;
+    height: 11%;
+    padding:0 4%;
+    border-radius: 30px 30px 0 0;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      height: 7vh;
+      border:none;
+    }
+
+    @media all and (max-width: $screen-smart-l) and (orientation:portrait) {
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  &__title-pc {
+    font-size: 0.9vw;
+    color:#000;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: none;
+    }
+  }
+
+  &__title-mobile {
+    position: relative;
+    display: none;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: block;
+      font-size: 4vw;
+      font-family: 'Proxima Nova Semibold', sans-serif;
+    }
+  }
+
+  &__inner-1 {
+    display: flex;
+    padding: 4%;
+    height: 89%;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      flex-direction: column;
+      height: auto;
+      padding: 0;
+    }
+  }
+
+  &__inner-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 35%;
+    padding-right: 3%;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: block;
+      width: 100%;
+      padding-right: 4vw;
+      padding-left: 4vw;
+      padding-top:0;
+    }
+  }
+
+  &__inner-3 {
+    display: flex;
+    width: 65%;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      padding-top: 5px;
+      padding-bottom: 5vw;
+      width: 100%;
+      display: block;
+      overflow-x:hidden;
+    }
+  }
+
+  &__inner-4 {
+    @include flex-v-align(space-between);
+    border:1px solid #e4e4e4;
+    overflow: hidden;
+    border-radius: 10px;
+    flex-grow: 1;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: block;
+      height: auto;
+      max-width:100%;
+      margin:0 auto;
+    }
+
+    @media all and (max-height: 720px) and (orientation:portrait) {
+      display: block;
+      height: auto;
+      max-width:70%;
+      margin:0 auto;
+    }
+  }
+
+  &__inner-5 {
+    @include flex-v-align;
+    flex-grow: 1;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: none;
+      padding:3vw 1vw;
+    }
+  }
+
+  &__items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    //border:1px solid green;
+    height: 100%;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      //display: block;
+      //width:100%;
+      //overflow-x: hidden;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+    @include flex-v-align(space-between);
+    width: 20%;
+    height: 33.333%;
+    //border:1px solid red;
+    cursor: pointer;
+    outline: 0;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: block;
+      min-width:18vw;
+      width:18vw;
+      height: auto;
+    }
+  }
+
+  &__item-image-box {
+    height: 70%;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      height: auto;
+    }
+
+    &:hover {
+      background: url('../img/icon-circle.svg') no-repeat center center;
+      background-size: auto 100%;
+    }
+  }
+
+  &__item-image {
+    display: block;
+    width: auto;
+    height: 80%;
+    margin: 7% auto 0 auto;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      width:80%;
+      height: auto;
+    }
+  }
+
+  &__item-name {
+    height: 30%;
+    padding-top: 0;
+    text-align: center;
+    font-size: 0.7vw;
+    line-height: 1;
+    color:#000;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      height: auto;
+      padding-top: 5px;
+      font-size: 2.7vw;
+    }
+  }
+
+  &__photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin:0 auto;
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__photo-title {
+    text-align: center;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 0.8vw;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      font-size: 2.7vw;
+    }
+
+  }
+
+  &__photo-title-color {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  &__close {
+    position: absolute;
+    right:-6%;
+    top:1%;
+    cursor: pointer;
+    width:5%;
+    height: 10%;
+    background: url('../img/icon-close.svg') no-repeat center center;
+    background-size: 50% auto;
+
+    @media all and (max-width: $screen-smart-l) and (orientation:portrait) {
+      display: none;
+    }
+  }
+
+  &__close-mobile {
+    display: none;
+    position: absolute;
+    right:0;
+    top:calc(50% - 6px);
+    cursor: pointer;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      top:calc(50% - 10px);
+    }
+  }
+
+  &__slider-title {
+    display: none;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: block;
+      font-size: 2.8vw;
+      font-family: 'Proxima Nova Semibold', sans-serif;
+      padding-top: 7vw;
+    }
+  }
+
+  &__btn {
+    display: block;
+    background: linear-gradient(115deg, #42ff96, #39e284);
+    font-family: $main-font;
+    font-size: 0.9vw;
+    height: 12%;
+    color: #000;
+    width: 100%;
+    border:none;
+    border-radius: 0.5vw;
+    margin-top: 1vw;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: none;
+    }
+  }
+
+  &__btn-mobile {
+    display: none;
+    background: linear-gradient(115deg, #42ff96, #39e284);
+    font-family: $main-font;
+    font-size: 5vw;
+    height: 8vh;
+    color: #000;
+    width: calc(100% - 8vw);
+    border:none;
+    border-radius: 1vw;
+    margin:0 4vw 5vw 4vw;
+
+    @media all and (max-width: $screen-tablet) and (orientation:portrait) {
+      display: block;
+    }
+  }
+
+}

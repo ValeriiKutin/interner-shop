@@ -1,0 +1,40 @@
+.cart-shipping {
+  @include flex-v-align;
+  background: linear-gradient(115deg, #42ff96, #39e284);
+  border-radius: 10px;
+  padding:40px 55px;
+
+  @media all and (max-width: $screen-smart-l) {
+    padding:25px 45px 33px 45px;
+  }
+
+  @media all and (max-width: $screen-smart) {
+    padding:15px;
+    border-radius: 5.8px;
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 24px;
+    color: black;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 13.8px;
+    }
+  }
+
+  &__info {
+    font-size: 15px;
+    color: black;
+    padding-top: 11px;
+
+    @media all and (max-width: $screen-smart-l) {
+      padding-top: 18px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 11px;
+      padding-top: 12px;
+    }
+  }
+}

@@ -1,0 +1,230 @@
+.cart-addons {
+  padding:85px 0 120px 0;
+
+  @media all and (max-width: $screen-tablet) {
+    padding:85px 0 80px 0;
+  }
+
+  @media all and (max-width: $screen-smart-l) {
+    padding:35px 0 40px 0;
+  }
+
+  @media all and (max-width: $screen-smart) {
+    padding:20px 0 25px 0;
+  }
+
+  &__title {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: black;
+    padding-left: 10px;
+    padding-bottom: 43px;
+
+    @media all and (max-width: $screen-smart-l) {
+      padding-bottom: 15px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      padding-bottom: 10px;
+      font-size: 12.87px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    @media all and (max-width: $screen-tablet) {
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &__item {
+    width:calc(50% - 30px);
+    margin:0 15px;
+    padding:32px 22px 20px 22px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0px rgba(black, 0.15);
+    background-color: #fff;
+
+    @media all and (max-width: $screen-tablet) {
+      width:100%;
+      margin:0 0 30px 0;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      margin:0 0 20px 0;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    @media all and (max-width: $screen-smart) {
+      border-radius: 5.75px;
+      padding:10px 10px 10px 10px;
+      margin:0 0 10px 0;
+    }
+
+  }
+
+  &__item-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item-images-wrap {
+    display: flex;
+    width:51%;
+
+    @media all and (max-width: $screen-tablet) {
+      width:30%;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      width:45%;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      width:51%;
+    }
+
+
+    & div {
+      padding-right:10px;
+
+      @media all and (max-width: $screen-smart) {
+        padding-right:5px;
+      }
+    }
+  }
+
+  &__item-image {
+    display: block;
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 5px;
+  }
+
+  &__item-info-wrap {
+    @include flex-v-align;
+    width:49%;
+    padding-left: 4%;
+
+    @media all and (max-width: $screen-tablet) {
+      width:70%;
+      padding-left: 20px;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      width:55%;
+      padding-left: 20px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      width:49%;
+      padding-left: 10px;
+    }
+
+  }
+
+  &__item-title {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 20px;
+    color: black;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 12px;
+    }
+  }
+
+  &__item-price {
+    font-size: 16px;
+    color: black;
+    padding-top: 10px;
+
+    @media all and (max-width: $screen-smart-l) {
+      padding-top: 5px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 11px;
+    }
+
+  }
+
+  &__item-desc {
+    font-size: 16px;
+    color: black;
+    padding-top: 27px;
+
+    @media all and (max-width: $screen-smart-l) {
+      font-size: 15px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 11px;
+      padding-top: 10px;
+    }
+
+  }
+
+  &__item-btn {
+    font-family: $main-font;
+    font-size: 13px;
+    color: black;
+    border:none;
+    background: linear-gradient(115deg, #42ff96, #39e284);
+    border-radius: 4px;
+    height: 34px;
+    margin-top: 20px;
+    padding:0 20px;
+
+    @media all and (max-width: $screen-smart) {
+      height: 24px;
+      font-size: 11px;
+      margin-top: 10px;
+      padding:0 15px;
+    }
+
+    &:hover {
+      background: #3ef28e;
+    }
+
+    &_selected {
+      background: #f1f1f1;
+      font-family: 'Proxima Nova Semibold', sans-serif;
+      font-size: 13px;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 11px;
+    }
+
+      &:hover {
+        background: #f1f1f1;
+      }
+    }
+
+    & img {
+      vertical-align: -7%;
+      margin-right: 7px;
+      height: 11px;
+      width:11px;
+
+      @media all and (max-width: $screen-smart) {
+        margin-right: 3px;
+        height: 10px;
+        width: 10px;
+      }
+
+
+    }
+
+  }
+
+}

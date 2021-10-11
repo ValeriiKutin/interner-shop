@@ -1,0 +1,51 @@
+.content {
+  max-width: $content-max-width;
+  margin:0 auto;
+  padding:0 15px;
+
+    @media all and (max-width: $screen-laptop) {
+      padding:0 30px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      padding:0 10px;
+    }
+
+  &_benefits-v1 {
+
+    @media all and (max-width: $screen-smart) {
+      padding:0;
+    }
+  }
+
+  &_benefits-v2 {
+
+    @media all and (max-width: $screen-smart-l) {
+      padding:0;
+    }
+  }
+
+  &_info {
+
+    & p {
+      margin:15px 0;
+      line-height: 1.5;
+    }
+
+    & li {
+      list-style-type: disc;
+      list-style-position: inside;
+      line-height: 1.5;
+    }
+
+    & h2 {
+      font-weight: bold;
+      font-size: 16px;
+      margin-top: 30px;
+    }
+  }
+
+  &_h100 {
+    height: 100%;
+  }
+}

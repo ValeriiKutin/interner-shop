@@ -1,0 +1,156 @@
+.cart-stats {
+  width: 100%;
+  margin-top: 10px;
+
+  & td {
+    font-size: 15px;
+    color: #000;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 12px;
+    }
+  }
+
+  &__left {
+    padding:18px 20px 0 25px;
+
+    @media all and (max-width: $screen-smart) {
+      padding:5px 0px 3px 15px;
+    }
+
+    &_pb20 {
+      padding-bottom: 20px;
+
+      @media all and (max-width: $screen-smart) {
+        padding-bottom: 10px;
+      }
+    }
+
+    &_pb25 {
+      padding-bottom: 25px;
+
+      @media all and (max-width: $screen-smart) {
+        padding-bottom: 14px;
+      }
+    }
+
+    &_pt0 {
+      padding-top: 0px;
+    }
+  }
+
+  &__right {
+    text-align: right;
+    padding:18px 0 0 0;
+    white-space: nowrap;
+    width:23%;
+    text-align: left;
+
+    @media all and (max-width: $screen-smart) {
+      padding:5px 20px 3px 15px;
+    }
+
+    &_pt0 {
+      padding-top: 0px;
+    }
+
+  }
+
+  &__total {
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-top: 23px;
+    border-top:1px solid #dedede;
+
+    @media all and (max-width: $screen-smart) {
+      padding-bottom: 15px;
+      padding-top: 14px;
+    }
+  }
+
+  &__link {
+    color: #1a0db3;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  &__arrow-down {
+    display: inline-block;
+    transform: rotate(90deg) scale(1.5);
+    margin-left: 5px;
+
+    &_up {
+      position: relative;
+      transform: rotate(-90deg) scale(1.5);
+      top: 1px;
+      margin-left: 0px;
+    }
+  }
+
+  &__promo-text {
+    font-family: $main-font;
+    font-size: 13px;
+    margin-top: -5px;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 11px;
+    }
+  }
+
+  &__promo-row {
+    display: none;
+  }
+
+
+  &__promo-apply, &__promo-cancel {
+    background: none;
+    border:none;
+    color: rgba(black,0.6);
+    font-family: $main-font;
+    font-size: 15px;
+
+    @media all and (max-width: $screen-smart-l) {
+      font-size: 13px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 12px;
+    }
+  }
+
+  &__promo-apply{
+    position: absolute;
+    top:calc(50% - 10px);
+    right:15px;
+    z-index:3;
+
+    @media all and (max-width: $screen-smart-l) {
+      top:calc(50% - 9px);
+    }
+
+    @media all and (max-width: $screen-smart) {
+      top:calc(50% - 8px);
+      right:8px;
+    }
+  }
+
+  &__promo-cancel {
+    position: relative;
+    top:21px;
+    z-index:3;
+    padding: 0;
+    color: #1a0db3;
+
+    @media all and (max-width: $screen-smart-l) {
+      top:18px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      top:15px;
+    }
+  }
+
+
+
+}

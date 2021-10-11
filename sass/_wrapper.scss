@@ -1,0 +1,120 @@
+.wrapper {
+
+  &_black {
+    background-color: #232323;
+  }
+
+  &_white {
+    background-color: #fff;
+  }
+
+  &_header {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    box-shadow: 0 0 10px 3px rgba(black, 0.3);
+  }
+
+  &_promo {
+    margin-top: 120px;
+    margin-bottom: 95px;
+
+    @media all and (max-width: $screen-tablet) {
+      margin-top: 90px;
+      margin-bottom: 100px;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      margin-top: 90px;
+      margin-bottom: 60px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      margin-top: 60px;
+    }
+
+  }
+
+  &_benefits {
+    margin-bottom: 95px;
+
+    @media all and (max-width: $screen-tablet) {
+      margin-bottom: 100px;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      margin-bottom: 60px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &_prices {
+    margin-bottom: 150px;
+
+    @media all and (max-width: $screen-tablet) {
+      margin-bottom: 100px;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      margin-bottom: 60px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &_reviews {
+    margin-bottom: 170px;
+
+    @media all and (max-width: $screen-tablet) {
+      margin-bottom: 110px;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      margin-bottom: 60px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      margin-bottom: 7px;
+    }
+  }
+
+  &_cart-top {
+    border-bottom:1px solid rgba(#232323,0.2);
+    margin-top: 60px;
+    background-color: #fff;
+
+    @media all and (max-width: $screen-smart) {
+      margin-top: 50px;
+    }
+  }
+
+  &_cart-shipping {
+    margin-top: 80px;
+    margin-bottom: 114px;
+
+    @media all and (max-width: $screen-smart-l) {
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      margin-bottom: 23px;
+    }
+  }
+
+  &_cart-addons {
+    background: linear-gradient(115deg, #f7f7f7, #f0faff);
+  }
+
+  &_flex-grow-1 {
+    flex-grow: 1;
+  }
+}

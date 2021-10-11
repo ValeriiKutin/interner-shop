@@ -1,0 +1,22 @@
+.thanks {
+  @include flex-v-align;
+  height: 100%;
+  padding-top: 60px;
+  text-align: center;
+
+  &__title {
+    font-size: 30px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 24px;
+    }
+
+  }
+
+  &__desc {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+
+}

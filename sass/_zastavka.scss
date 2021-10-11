@@ -1,0 +1,50 @@
+.zastavka {
+  @include flex-v-align;
+  height: 100%;
+  padding: 100px 0;
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    width:500px;
+    height: auto;
+    margin:20px auto;
+    border:none;
+
+    @media all and (max-width: $screen-laptop-l) {
+      width:360px;
+    }
+  }
+
+  &__btn {
+    @include flex-v-align;
+    width:100%;
+    max-width: 500px;
+    height: 60px;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    border:none;
+    background: linear-gradient(115deg, #42ff96, #39e284);
+    border-radius: 10px;
+    margin: 0 auto;
+
+    @media all and (max-width: $screen-laptop-l) {
+      max-width:360px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      height: 44px;
+      font-size: 10px;
+      margin-top: 10px;
+    }
+
+    &:hover {
+      background: #3ef28e;
+    }
+
+  }
+
+}

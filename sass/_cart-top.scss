@@ -1,0 +1,36 @@
+.cart-top {
+  display: flex;
+  justify-content: space-between;
+  height:65px;
+
+  @media all and (max-width: $screen-smart) {
+    height: 40px;
+  }
+
+  &__title {
+    @include flex-v-align;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-size: 18px;
+    color: #232323;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    @include flex-v-align;
+    font-size: 15px;
+    padding-right: 10px;
+    color: #232323;
+    text-decoration: none;
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 10px;
+    }
+  }
+
+
+
+
+}

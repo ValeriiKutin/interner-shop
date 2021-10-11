@@ -1,0 +1,306 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #999999;
+
+  @media all and (max-width: $screen-smart) {
+    padding-top: 20px;
+    font-size: 2.5vw;
+  }
+
+  &__wrap-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    @media all and (max-width: 900px) {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &_marg-bot-0 {
+      margin-bottom: 0;
+    }
+
+    &_marg-top-55 {
+      margin-top: 55px;
+
+      @media all and (max-width: $screen-smart) {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__wrap-1-1 {
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+    padding-right: 10px;
+
+    @media all and (max-width: 900px) {
+      display: block;
+      width: 100%;
+      padding-bottom: 20px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      width: 100%;
+      margin-bottom: 20px;
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__wrap-1-2 {
+    display: flex;
+    justify-content: space-between;
+    width:50%;
+
+    @media all and (max-width: 900px) {
+      width: 100%;
+      display: block;
+      padding-left: 0;
+      text-align: left;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      width: 100%;
+      text-align: center;
+    }
+
+    &_align-right {
+      justify-content: flex-end;
+    }
+  }
+
+  &__wrap-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+    @media all and (max-width: 1100px) {
+      margin-bottom: 55px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  &__wrap-2-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+
+    @media all and (max-width: 1100px) {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    & div {
+
+      @media all and (max-width: 1100px) {
+        padding-right: 20px;
+      }
+
+      @media all and (max-width: 600px) {
+        padding-top: 0px;
+      }
+
+    }
+  }
+
+  &__wrap-2-2 {
+    flex-grow: 1;
+    text-align: right;
+
+    @media all and (max-width: $screen-smart) {
+      text-align: center;
+    }
+  }
+
+  &__wrap-3 {
+    display: flex;
+    margin-bottom: 40px;
+
+    @media all and (max-width: $screen-smart-l) {
+      justify-content: space-between;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      display: block;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  &__wrap-3-item {
+    display: block;
+    padding-right: 30px;
+    white-space: nowrap;
+
+    @media all and (max-width: $screen-smart-l) {
+      padding-right: 0;
+    }
+  }
+
+  &__address {
+    padding-top: 8px;
+    padding-left: 110px;
+
+    @media all and (max-width: $screen-tablet) {
+      padding-top: 40px;
+      padding-left: 0;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+
+  &__address2 {
+
+    @media all and (max-width: 1100px) {
+      width:100%;
+      padding-top: 7px;
+    }
+
+    @media all and (max-width: 600px) {
+      padding-top: 0px;
+    }
+  }
+
+  &__company {
+    display: block;
+    white-space: nowrap;
+    padding-right: 20px;
+
+    @media all and (max-width: $screen-smart) {
+      text-align: center;
+      padding-right: 0;
+    }
+  }
+
+  &__phone {
+    @include flex-v-align;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    white-space: nowrap;
+
+    @media all and (max-width: $screen-tablet) {
+      display: block;
+      margin-bottom: 40px;
+      padding-left: 0;
+      text-align: right;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &_pad-left {
+      padding-left:20%;
+
+      @media all and (max-width: $screen-smart) {
+        padding-left:0;
+      }
+    }
+
+  }
+
+  &__contact {
+    padding-top: 8px;
+
+    @media all and (max-width: $screen-smart) {
+      padding-top: 0;
+    }
+
+  }
+
+  &__link {
+    color: #999999;
+    text-decoration: none;
+
+    &:hover {
+      color: #7689fd;
+      text-decoration: none;
+    }
+
+    &_marg-bot-10 {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__copyright {
+
+    @media all and (max-width: $screen-smart) {
+      text-align: center;
+      font-size: 2.5vw;
+    }
+  }
+
+  &__icon-home {
+
+    @media all and (max-width: $screen-smart) {
+      height: 2vw;
+      width: auto;
+    }
+  }
+
+  &__icon-phone {
+    margin-right: -5px;
+
+    @media all and (max-width: $screen-smart) {
+      height: 2vw;
+      width: auto;
+      margin-right: -3px;
+    }
+  }
+
+  &__icon-mail {
+    margin-right: -5px;
+
+    @media all and (max-width: $screen-smart) {
+      height: 1.7vw;
+      width: auto;
+      margin-right: -3px;
+    }
+  }
+
+  &__payments {
+    max-width: 224px;
+    width:100%;
+    height: auto;
+
+    @media all and (max-width: $screen-smart) {
+      margin-top: 20px;
+      max-width:30%;
+      height: auto;
+    }
+
+  }
+
+  &__hide {
+
+    @media all and (min-width: 601px) and (max-width: 890px) {
+      display: none;
+    }
+
+
+  }
+
+
+
+}

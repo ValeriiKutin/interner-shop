@@ -1,0 +1,20 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+
+  @media all and (max-width: $screen-smart) {
+    height: 50px;
+  }
+
+  &__logo, &__contact, &__cart {
+    @include flex-v-align;
+  }
+
+  @media all and (max-width: $screen-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+}

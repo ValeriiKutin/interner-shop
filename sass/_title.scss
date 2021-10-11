@@ -1,0 +1,133 @@
+.title {
+
+  &_h2 {
+    font-size: 30px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+
+    @media all and (max-width: $screen-tablet) {
+      font-size: 26px;
+    }
+
+    @media all and (max-width: $screen-smart) {
+      font-size: 5vw;
+    }
+  }
+
+  &_bold {
+    font-weight: bold;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_24px {
+    font-size: 24px;
+
+    @media all and (max-width: $screen-smart-l) {
+      font-size: 3.5vw;
+      font-family: 'Proxima Nova Semibold', sans-serif;
+    }
+
+  }
+
+
+  &_90px {
+    font-size: 90px;
+
+    @media all and (max-width: $screen-tablet) {
+      font-size: 8vw;
+    }
+
+  }
+
+  &_94px {
+    font-size: 94px;
+
+    @media all and (max-width: $screen-tablet) {
+      font-size: 9.5vw;
+    }
+  }
+
+  &_96px {
+    font-size: 96px;
+
+    @media all and (max-width: $screen-tablet) {
+      font-size: 10vw;
+    }
+  }
+
+  &_98px {
+    font-size: 98px;
+
+    @media all and (max-width: $screen-tablet) {
+      font-size: 10vw;
+    }
+  }
+
+  &_upcase {
+    text-transform: uppercase;
+  }
+
+  &_light-gray {
+    color: #f4f4f4;
+  }
+
+  &_marg-top-min-45 {
+    margin-top: -45px;
+
+    @media all and (max-width: $screen-tablet) {
+      margin-top: -5vw;
+    }
+
+  }
+
+  &_marg-top-min-55 {
+    margin-top: -55px;
+
+    @media all and (max-width: $screen-tablet) {
+      margin-top: -5vw;
+    }
+  }
+
+  &_benefits {
+    font-size: 48px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+
+    @media all and (max-width: $screen-tablet) {
+      font-size: 36px;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    @media all and (max-width: $screen-smart-l) {
+      font-size: 8vw;
+      margin-top: 30px;
+      text-align: center;
+      padding-left:10%;
+      padding-right: 10%;
+    }
+
+    &:after {
+    content: '';
+    display: block;
+    background-color: #32ce44;
+    width: 111px;
+    height: 4px;
+    margin-top: 9%;
+    margin-bottom: 30px;
+
+      @media all and (max-width: $screen-tablet) {
+        width:25%;
+        margin-top: 7%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+  &_side-pad {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
